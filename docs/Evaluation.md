@@ -10,7 +10,7 @@ Below are specific instructions for preparing and evaluating on specific dataset
 
 2. Evaluate as following. Please change the `MODEL_PATH` and `MODEL_NAME`.
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 bash scripts/eval/vqav2.sh "MODEL_PATH" "MODEL_NAME"
+CUDA_VISIBLE_DEVICES=0,1 bash scripts/eval/vqav2.sh "MODEL_PATH" "MODEL_NAME"
 ```
 Please submit the results under the `eval_dataset/vqav2/answers_upload` to the [vqav2_evaluation_server](https://eval.ai/web/challenges/challenge-page/830/my-submission).
 
@@ -23,7 +23,7 @@ Please submit the results under the `eval_dataset/vqav2/answers_upload` to the [
 
 2. Evaluate as following. Please change the `MODEL_PATH` and `MODEL_NAME`.
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 bash scripts/eval/gqa.sh "MODEL_PATH" "MODEL_NAME"
+CUDA_VISIBLE_DEVICES=0,1 bash scripts/eval/gqa.sh "MODEL_PATH" "MODEL_NAME"
 ```
 
 ---
@@ -97,7 +97,7 @@ python eval/download_images.py
 
 2. Evaluate as following. Please change the `MODEL_PATH` and `MODEL_NAME`.
 ```bash
-CUDA_VISIBLE_DEVICES=4 bash scripts/eval/mmmu.sh "MODEL_PATH" "MODEL_NAME"
+CUDA_VISIBLE_DEVICES=0 bash scripts/eval/mmmu.sh "MODEL_PATH" "MODEL_NAME"
 ```
 
 ---
