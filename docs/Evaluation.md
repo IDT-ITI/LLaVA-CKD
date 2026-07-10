@@ -1,7 +1,7 @@
 ## Evaluation
 
 Use the script eval/eval_all to evaluate a specific model in all the datasets.
-Below are specific instructions for preparing and evaluating on specific datasets.
+Below are specific instructions for preparing and evaluating on specific dataset.
 
 ### VQAv2
 1. Prepare the evaluation images as following:
