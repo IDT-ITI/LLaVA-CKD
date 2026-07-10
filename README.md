@@ -20,9 +20,8 @@
 We will release the code and checkpoints as soon as the paper is accepted. Stay tuned! 🔥
 
 - [x] Release environment setup
-- [ ] Release training code
-- [ ] Release inference code
 - [ ] Release checkpoints
+- [ ] Release code
 
 ## News 📢
 
