@@ -1,6 +1,6 @@
 ## Evaluation
 
-Use the script eval/eval_all to evaluate a specific model in all the datasets.
+Use the script `eval/eval_all.sh` to evaluate a specific model in all the datasets.
 Below are specific instructions for preparing and evaluating on specific dataset.
 
 ### VQAv2
