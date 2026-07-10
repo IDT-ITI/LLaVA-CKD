@@ -44,7 +44,7 @@ Large Vision-Language Models (VLMs) are successful in addressing a multitude of 
 
 ## Citation 📝
 
-If you find our project useful for your research, please consider citing our paper and codebase with the following BibTeX:
+If you find our project useful for your research, please consider citing our paper:
 
 ```bibtex
 @misc{gkalelisMezarisArxiv2026,
