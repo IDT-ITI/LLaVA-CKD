@@ -37,7 +37,7 @@ Large Vision-Language Models (VLMs) are successful in addressing a multitude of 
 ## Getting Started 🌟
 
 1. [Environment Installation](docs/Install.md)
-2. [Training Data Preparation](https://tinyllava-factory.readthedocs.io/en/latest/Prepare%20Datasets.html)
+2. [Training Data](https://tinyllava-factory.readthedocs.io/en/latest/Prepare%20Datasets.html)
 3. [Evaluation](docs/Evaluation.md)
 
 ## Citation 📝
