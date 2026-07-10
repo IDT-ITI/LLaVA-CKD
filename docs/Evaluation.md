@@ -1,5 +1,8 @@
 ## Evaluation
 
+Use the script eval/eval_all to evaluate a specific model in all the datasets.
+Below are specific instructions for preparing and evaluating on specific datasets.
+
 ### VQAv2
 1. Prepare the evaluation images as following:
 
@@ -25,18 +28,6 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 bash scripts/eval/gqa.sh "MODEL_PATH" "MODE
 
 ---
 
-### Vizwiz
-1. Prepare the evaluation images as following:
-
-`cd ./eval_dataset/ && mkdir vizwiz && cd vizwiz`, then download [Annotations.zip](https://vizwiz.cs.colorado.edu/VizWiz_final/vqa_data/Annotations.zip) and [test.zip](https://vizwiz.cs.colorado.edu/VizWiz_final/images/test.zip). Finally, extract `Annotations/test.json` and `test.zip` to `./vizwiz/test`
-
-2. Evaluate as following. Please change the `MODEL_PATH` and `MODEL_NAME`.
-```bash
-CUDA_VISIBLE_DEVICES=0 bash scripts/eval/vizwiz.sh "MODEL_PATH" "MODEL_NAME"
-```
-Please submit the results under the `eval_dataset/vizwiz/answers_upload` to the [vizwiz_evaluation_server](https://eval.ai/web/challenges/challenge-page/2185/submission).
-
----
 
 ### SciQA
 1. Prepare the evaluation images as following:
@@ -76,33 +67,6 @@ CUDA_VISIBLE_DEVICES=0 bash scripts/eval/textvqa.sh "MODEL_PATH" "MODEL_NAME"
 ```bash
 CUDA_VISIBLE_DEVICES=0 bash scripts/eval/mme.sh "MODEL_PATH" "MODEL_NAME"
 ```
-
----
-
-
-### MMB
-1. Prepare the evaluation images as following:
-
-`cd ./eval_dataset/ && mkdir mmbench && cd mmbench`, then download [MMBench_DEV_EN_legacy.tsv](http://opencompass.openxlab.space/utils/MMBench/MMBench_DEV_EN_legacy.tsv) to `mmbench`
-
-2. Evaluate as following. Please change the `MODEL_PATH` and `MODEL_NAME`.
-```bash
-CUDA_VISIBLE_DEVICES=7 bash scripts/eval/mmbench.sh "MODEL_PATH" "MODEL_NAME" 
-```
-Please submit the results under the `eval_dataset/mmbench/answers_upload/MMBench_DEV_EN_legacy` to the [mmbench-submission](https://mmbench.opencompass.org.cn/mmbench-submission).
-
----
-
-### MMBenchCN
-1. Prepare the evaluation images as following: 
-
-`cd ./eval_dataset/ && mkdir mmbench_cn && cd mmbench_cn` and then download [MMBench_DEV_CN_legacy.tsv](http://opencompass.openxlab.space/utils/MMBench/MMBench_DEV_CN_legacy.tsv) to `mmbench_cn`
-
-2. Evaluate as following. Please change the `MODEL_PATH` and `MODEL_NAME`.
-```bash
-CUDA_VISIBLE_DEVICES=0 bash scripts/eval/mmbench_cn.sh "MODEL_PATH" "MODEL_NAME"
-```
-Please submit the results under the `eval_dataset/mmbench_cn/answers_upload/MMBench_DEV_CN_legacy` to the [mmbench-submission](https://mmbench.opencompass.org.cn/mmbench-submission).
 
 ---
 
