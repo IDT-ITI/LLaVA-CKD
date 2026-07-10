@@ -26,7 +26,7 @@ We will release the code and checkpoints as soon as the paper is accepted. Stay 
 
 ## News 📢
 
-- **`2026/08/01`** LLaVA-CKD checkpoints released (including checkpoints of TinyLLaVA and LLaVA-KD created in the paper) [Hugging Face](https://huggingface.co/collections/CERTH-ITI-IDT/ckd-llava). 🔥
+- **`2026/08/01`** LLaVA-CKD checkpoints released (including checkpoints of TinyLLaVA and LLaVA-KD) [Hugging Face](https://huggingface.co/collections/CERTH-ITI-IDT/ckd-llava). 🔥
 - **`2026/09/01`** LLaVA-CKD paper accepted by NeurIPS 2026. 🎉
 - **`2026/09/01`** LLaVA-CKD training code released. 🔥
 - **`2026/09/01`** LLaVA-CKD inference code released. 🔥
