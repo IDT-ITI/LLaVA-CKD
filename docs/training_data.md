@@ -48,8 +48,6 @@ dataset
 ├── vg
 │   ├── VG_100K
 │   ├── VG_100K_2
-├── share_textvqa
-│   ├── images
 ├── text_files
 │   ├── blip_laion_cc_sbu_558k.json
 │   ├── llava_v1_5_mix665k.json
