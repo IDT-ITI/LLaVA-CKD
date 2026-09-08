@@ -39,8 +39,6 @@ dataset
 │   │   ├── images
 ├── coco
 │   ├── train2017
-├── sam
-│   ├── images
 ├── gqa
 │   ├── images
 ├── ocr_vqa
