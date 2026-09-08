@@ -30,7 +30,7 @@ SFT annotations: [llava_v1_5_mix665k.json](https://huggingface.co/datasets/liuha
 
 ##  Data organization
 
-Organize the image files and annotation files as follows in `path/to/your/dataset` :
+Organize the image files and annotation files as follows in `path/to/dataset` :
 
 ```
 dataset
