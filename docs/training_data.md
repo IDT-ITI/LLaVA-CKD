@@ -23,3 +23,32 @@ The SFT images of LLaVA. Download as follows.
 The SFT annotations of LLaVA. Download as follows.
 
 SFT annotations: [llava_v1_5_mix665k.json](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K/blob/main/llava_v1_5_mix665k.json)
+
+##  Organize Data
+
+Organize the image files and annotation files as follows in `path/to/your/dataset` :
+
+```
+dataset
+├── llava
+│   ├── llava\_pretrain
+│   │   ├── images
+├── coco
+│   ├── train2017
+├── sam
+│   ├── images
+├── gqa
+│   ├── images
+├── ocr\_vqa
+│   ├── images
+├── textvqa
+│   ├── train\_images
+├── vg
+│   ├── VG\_100K
+│   ├── VG\_100K\_2
+├── share\_textvqa
+│   ├── images
+├── text\_files
+│   ├── blip\_laion\_cc\_sbu\_558k.json
+│   ├── llava\_v1\_5\_mix665k.json
+```
