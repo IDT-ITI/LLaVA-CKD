@@ -32,7 +32,7 @@ In our example (i.e., TinyLLaVA Qwen2.5-1.5B model is used as TA), set:
 
 Run the following script:
 ```
-bash LLaVA-KD/scripts/train/llava_kd_qwen2/train_qwen2_distill.sh
+bash scripts/train/llava_kd_qwen2/train_qwen2_distill.sh
 ```
 
 For our example, this will produce the following pretrained Student model:
@@ -53,7 +53,7 @@ That is, for our example, set:
 
 Run the following script:
 ```
-bash LLaVA-KD/scripts/train/llava_kd_qwen2/train_qwen2_sft.sh
+bash scripts/train/llava_kd_qwen2/train_qwen2_sft.sh
 ```
 
 For our example, this will produce the following finetuned Student model:
@@ -80,7 +80,7 @@ E.g., in case the TinyLLaVA Qwen2.5-0.5B model is used as Student, set:
 
 Run the following script:
 ```
-bash LLaVA-KD/scripts/train/llava_kd_qwen2/train_qwen2_distill_after_sft.sh
+bash scripts/train/llava_kd_qwen2/train_qwen2_distill_after_sft.sh
 ```
 
 For our example, this will produce the following finetuned Student model:
@@ -118,7 +118,7 @@ That is, for our example, set:
 
 Run the following script:
 ```
-bash LLaVA-KD/scripts/train/llava_kd_qwen2/train_qwen2_distill_bu.sh
+bash scripts/train/llava_kd_qwen2/train_qwen2_distill_bu.sh
 ```
 
 For our example, this will produce the following finetuned Student model:
@@ -136,7 +136,7 @@ That is, for our example you may set:
 
 Run the following script:
 ```
-bash TinyLLaVA/scripts/train/qwen2/train_qwen2_base_bu.sh
+bash scripts/train/qwen2/train_qwen2_base_bu.sh
 ```
 
 For our example, this will produce the following finetuned Student model:
@@ -163,7 +163,7 @@ That is, for our example set:
 
 Run the following script:
 ```
-bash LLaVA-KD/scripts/train/llava_kd_qwen2/train_qwen2_distill_after_sft.sh
+bash scripts/train/llava_kd_qwen2/train_qwen2_distill_after_sft.sh
 ```
 
 For our example, this will produce the final Student model:
