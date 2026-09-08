@@ -16,7 +16,7 @@ Pretraining annotations: [blip_laion_cc_sbu_558k.json](https://huggingface.co/da
 
 ## SFT images
 The SFT images of LLaVA. Download as follows.
-* LAION-CC-SBU-558K: Already download as “LAION-CC-SBU-558K” in Pretraining Images.
+* LAION-CC-SBU-558K: Already downloaded as “LAION-CC-SBU-558K” in Pretraining Images.
 * COCO: This dataset is from the [COCO2017_challenge](https://cocodataset.org/). Download: [train2017](http://images.cocodataset.org/zips/train2017.zip)
 * GQA: [GQA_project_page](https://cs.stanford.edu/people/dorarad/gqa/about.html). Download: [gqa_images](https://downloads.cs.stanford.edu/nlp/data/gqa/images.zip)
 * OCR-VQA: [OCR-VQA_project_page](https://ocr-vqa.github.io/). Download: [download_script](https://drive.google.com/drive/folders/1_GYPY5UkUy7HIcR0zq3ZCFgeZN7BAfm_). All files are saved as `.jpg`
