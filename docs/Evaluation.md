@@ -1,4 +1,4 @@
-## Evaluation
+# Evaluation
 We use 7 benchmarks for evaluation: VQAv2, GQA, SciQA, TextVQA, MME, POPE and MMMU.
 
 The details of the evaluation are provided in LLaVA-KD evaluation page [LLaVA-KD evaluation instructions](https://github.com/Fantasyele/LLaVA-KD/blob/main/docs/Evaluation.md).
@@ -9,7 +9,7 @@ For housekeeping purposes we also provide the instructions for preparing and eva
 Use the script `eval/eval_all.sh` to evaluate a specific model in all the datasets.
 Below are specific instructions for preparing and evaluating on specific dataset.
 
-### VQAv2
+## VQAv2
 1. Prepare the evaluation images as following:
 
 `cd ./eval_dataset/ && mkdir vqav2 && cd vqav2`, then download and extract [test2015](http://images.cocodataset.org/zips/test2015.zip) to `./vqav2`
@@ -22,7 +22,7 @@ Please submit the results under the `eval_dataset/vqav2/answers_upload` to the [
 
 ---
 
-### GQA
+## GQA
 1. Prepare the evaluation images as following:
 
 `cd ./eval_dataset/ && mkdir gqa && cd gqa`, then download the `Questions` and `Images` on [`GQA`](https://cs.stanford.edu/people/dorarad/gqa/evaluate.html) and the [Evaluation Script](https://cs.stanford.edu/people/dorarad/gqa/evaluate.html) to `./gqa`
@@ -35,7 +35,7 @@ CUDA_VISIBLE_DEVICES=0,1 bash scripts/eval/gqa.sh "MODEL_PATH" "MODEL_NAME"
 ---
 
 
-### SciQA
+## SciQA
 1. Prepare the evaluation images as following:
 
 `cd ./eval_dataset/ && mkdir scienceqa && cd scienceqa`. Subsequently, you can download `pid_splits.json`, `problems.json` and `test.zip` on [scienceqa](https://drive.google.com/drive/folders/16kuhXdM-MOhYcFIyRj91WvnDnjnF-xHw), and then extract `test.zip` to `./scienceqa/images`
@@ -48,7 +48,7 @@ CUDA_VISIBLE_DEVICES=0 bash scripts/eval/sqa.sh "MODEL_PATH" "MODEL_NAME"
 ---
 
 
-### TextVQA
+## TextVQA
 1. Prepare the evaluation images as following:
 
 `cd ./eval_dataset/ && mkdir textvqa && cd textvqa`, then download [TextVQA_0.5.1_val.json](https://dl.fbaipublicfiles.com/textvqa/data/TextVQA_0.5.1_val.json) and [images](https://dl.fbaipublicfiles.com/textvqa/images/train_val_images.zip) to `./textvqa`
@@ -61,7 +61,7 @@ CUDA_VISIBLE_DEVICES=0 bash scripts/eval/textvqa.sh "MODEL_PATH" "MODEL_NAME"
 ---
 
 
-### MME
+## MME
 1. Prepare the evaluation images as following:
 
 * cd ./eval_dataset/ && mkdir MME && cd MME
@@ -77,7 +77,7 @@ CUDA_VISIBLE_DEVICES=0 bash scripts/eval/mme.sh "MODEL_PATH" "MODEL_NAME"
 ---
 
 
-### POPE
+## POPE
 1. Prepare the evaluation images as following: 
 
 `cd ./eval_dataset/ && mkdir pope && cd pope`, then download [json_files](https://github.com/AoiDragon/POPE/tree/e3e39262c85a6a83f26cf5094022a782cb0df58d/output/coco) to `pope/coco`. In addition, you should download and extract [val2014.zip](http://images.cocodataset.org/zips/val2014.zip) to `pope/val2014`
@@ -91,7 +91,7 @@ CUDA_VISIBLE_DEVICES=0 bash scripts/eval/pope.sh "MODEL_PATH" "MODEL_NAME"
 ---
 
 
-### MMMU
+## MMMU
 1. Prepare the evaluation images as following: 
 
 * cd ./eval_dataset/ && mkdir MMMU && cd MMMU
@@ -107,7 +107,9 @@ CUDA_VISIBLE_DEVICES=0 bash scripts/eval/mmmu.sh "MODEL_PATH" "MODEL_NAME"
 ```
 
 ---
-The srtucture of the evaluation dataset will be:
+## Evaluation datasets organization
+
+The srtucture of the evaluation datasets will be:
 
 ```plaintext
 ├── gqa
