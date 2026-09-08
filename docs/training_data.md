@@ -1,4 +1,4 @@
-## LLaVA dataset
+# LLaVA dataset
 The LLaVA dataset dataset is used for training the different models. The details for data preparation are provided in the following link of TinyLLaVA: 
 [Training Data Preparation](https://tinyllava-factory.readthedocs.io/en/latest/Prepare%20Datasets.html).
 
