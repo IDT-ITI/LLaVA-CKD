@@ -1,8 +1,8 @@
 # Train
 
 
-- Replace data paths with yours in `scripts/train/train_phi.sh`
-- Replace `output_dir` with yours in `scripts/train/pretrain.sh`
+- Replace data paths with yours in `scripts/train/train_.sh`
+- Replace `output_dir` with yours in `scripts/train/pretrain_.sh`
 - Replace `pretrained_model_path` and `output_dir` with yours in `scripts/train/finetune.sh`
 - Adjust your GPU ids (localhost) and `per_device_train_batch_size` in `scripts/train/pretrain.sh` and `scripts/train/finetune.sh`
 
