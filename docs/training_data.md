@@ -1,7 +1,6 @@
 ## LLaVA dataset
 
-##  Pretraining Images
-The pretraining images of LLaVA is from the 558K subset of the LAION-CC-SBU dataset. Download as follows.
+* Pretraining Images: The pretraining images of LLaVA is from the 558K subset of the LAION-CC-SBU dataset. Download as follows.
 
 LAION-CC-SBU-558K [images.zip](https://huggingface.co/datasets/liuhaotian/LLaVA-Pretrain/blob/main/images.zip)
 
