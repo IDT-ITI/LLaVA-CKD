@@ -1,16 +1,20 @@
 ## LLaVA dataset
+The LLaVA dataset dataset is used for training the different models. The details for data preparation are provided in the following link of TinyLLaVA: 
+[Training Data Preparation](https://tinyllava-factory.readthedocs.io/en/latest/Prepare%20Datasets.html).
 
-## Pretraining Images
+For housekeeping purposes we provide these details also locally in the following sections.
+
+## Pretraining images
 The pretraining images of LLaVA is from the 558K subset of the LAION-CC-SBU dataset. Download as follows.
 
 LAION-CC-SBU-558K [images.zip](https://huggingface.co/datasets/liuhaotian/LLaVA-Pretrain/blob/main/images.zip)
 
-## Pretraining Annotations
+## Pretraining annotations
 The pretraining annotations of LLaVA. Download as follows.
 
 Pretraining annotations: [blip_laion_cc_sbu_558k.json](https://huggingface.co/datasets/liuhaotian/LLaVA-Pretrain)
 
-## SFT Images
+## SFT images
 The SFT images of LLaVA. Download as follows.
 * LAION-CC-SBU-558K: Already download as “LAION-CC-SBU-558K” in Pretraining Images.
 * COCO: This dataset is from the [COCO2017_challenge](https://cocodataset.org/). Download: [train2017](http://images.cocodataset.org/zips/train2017.zip)
@@ -19,19 +23,19 @@ The SFT images of LLaVA. Download as follows.
 * TextVQA: [TextVQA_project_page](https://textvqa.org/). Download: [trainval_images](https://dl.fbaipublicfiles.com/textvqa/images/train_val_images.zip)
 * VisualGenome: [VisualGenome_project_page](https://homes.cs.washington.edu/~ranjay/visualgenome/index.html). Download: [part1](https://cs.stanford.edu/people/rak248/VG_100K_2/images.zip), [part2](https://cs.stanford.edu/people/rak248/VG_100K_2/images2.zip)
 
-## SFT Annotations
+## SFT annotations
 The SFT annotations of LLaVA. Download as follows.
 
 SFT annotations: [llava_v1_5_mix665k.json](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K/blob/main/llava_v1_5_mix665k.json)
 
-##  Organize Data
+##  Data organization
 
 Organize the image files and annotation files as follows in `path/to/your/dataset` :
 
 ```
 dataset
 ├── llava
-│   ├── llava\_pretrain
+│   ├── llava_pretrain
 │   │   ├── images
 ├── coco
 │   ├── train2017
@@ -39,16 +43,16 @@ dataset
 │   ├── images
 ├── gqa
 │   ├── images
-├── ocr\_vqa
+├── ocr_vqa
 │   ├── images
 ├── textvqa
-│   ├── train\_images
+│   ├── train_images
 ├── vg
-│   ├── VG\_100K
-│   ├── VG\_100K\_2
-├── share\_textvqa
+│   ├── VG_100K
+│   ├── VG_100K_2
+├── share_textvqa
 │   ├── images
-├── text\_files
-│   ├── blip\_laion\_cc\_sbu\_558k.json
-│   ├── llava\_v1\_5\_mix665k.json
+├── text_files
+│   ├── blip_laion_cc_sbu_558k.json
+│   ├── llava_v1_5_mix665k.json
 ```
