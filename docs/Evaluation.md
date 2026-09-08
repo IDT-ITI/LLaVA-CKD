@@ -132,14 +132,6 @@ The srtucture of the evaluation datasets will be:
 │   ├── val_all_questions.json
 │   ├── val_balanced_questions.json
 │   └── val_sceneGraphs.json
-├── mmbench
-│   ├── answers
-│   ├── answers_upload
-│   ├── MMBench_DEV_EN_legacy.tsv
-├── mmbench_cn
-│   ├── answers
-│   ├── answers_upload
-│   ├── MMBench_DEV_CN_legacy.tsv
 ├── MME
 │   ├── answers
 │   ├── convert_answer_to_mme.py
@@ -167,14 +159,6 @@ The srtucture of the evaluation datasets will be:
 │   ├── TextVQA_0.5.1_val.json
 │   ├── train_images
 │   └── train_images.tar.gz
-├── vizwiz
-│   ├── Annotations.zip
-│   ├── answers
-│   ├── answers_upload
-│   ├── llava_test.jsonl
-│   ├── test
-│   ├── train.json
-│   └── val.json
 └── vqav2
     ├── answers
     ├── answers_upload
