@@ -155,7 +155,7 @@ Set the `student_sft_path` variable with the path of the model derived in the pr
 
 That is, for our example set:
 
-`distill_pretrained_model_path = '/path/to/tiny-llava-Qwen2.5-0.5B-siglip-so400m-patch14-384-qwen25-1_5b_05b_3b_05b_base-distill-finetune'`
+`student_sft_path = '/path/to/tiny-llava-Qwen2.5-0.5B-siglip-so400m-patch14-384-qwen25-1_5b_05b_3b_05b_base-distill-finetune'`
 
 Run the following script:
 ```
