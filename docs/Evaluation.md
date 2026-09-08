@@ -2,7 +2,7 @@
 We use 7 benchmarks for evaluation: VQAv2, GQA, SciQA, TextVQA, MME, POPE and MMMU.
 
 The details of the evaluation are provided in LLaVA-KD evaluation page [LLaVA-KD evaluation instructions](https://github.com/Fantasyele/LLaVA-KD/blob/main/docs/Evaluation.md).
-Useful information is also provided in the TinyLLaVA evaluation page [TinyLLaVA evaluation instructions](https://tinyllava-factory.readthedocs.io/en/latest/Evaluation.html) and LLaVA v1.5 evaluation page [LLaVA v1.5 evaluation instructions](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluation.md).
+Useful information is also provided in the evaluation pages of TinyLLaVA [TinyLLaVA evaluation instructions](https://tinyllava-factory.readthedocs.io/en/latest/Evaluation.html) and LLaVA v1.5 [LLaVA v1.5 evaluation instructions](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluation.md).
 
 For housekeeping purposes we also provide the instructions for preparing and evaluating a model in the following. 
 
