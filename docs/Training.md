@@ -1,7 +1,12 @@
 # Train
 
 In all involved steps below the user has to replace data paths, and where applicable `TEACHER_PATH`, in `scripts/train/train_`***`.sh`, with the ones used in her/his experiment.
-Also ensure that the variable `VERSION` is the same along all steps in the different stages. 
+Also ensure that the variable `VERSION` is the same along all steps in the different stages.
+
+To facilitate the user, we assume the following setting for Student, Teacher Assistant (TA) and Teacher:
+- Student: TinyLLaVA Qwen2.5-0.5B (`tiny-llava-Qwen2.5-1.5B-siglip-so400m-patch14-384-qwen25-05b_base-finetune`)
+- TA: TinyLLaVA Qwen2.5-1.5B (`tiny-llava-Qwen2.5-1.5B-siglip-so400m-patch14-384-qwen25-1_5b_base-finetune`)
+- Teacher: TinyLLaVA Qwen2.5-3B (`tiny-llava-Qwen2.5-1.5B-siglip-so400m-patch14-384-qwen25-3b_base-finetune`)
 
 ## Stage 1
 
@@ -47,7 +52,7 @@ E.g., in case the TinyLLaVA Qwen2.5-1.5B model is used as TA, set:
 Set the `student_sft_path` variable with the path of the model derived in the previous step.
 E.g., in case the TinyLLaVA Qwen2.5-0.5B model is used as Student, set:
 
-`distill_pretrained_model_path = '/path/to/tiny-llava-Qwen2.5-0.5B-siglip-so400m-patch14-384-qwen25-1_5b_05b_base-finetune'`
+`student_sft_path = '/path/to/tiny-llava-Qwen2.5-0.5B-siglip-so400m-patch14-384-qwen25-1_5b_05b_base-finetune'`
 
 Run the following script:
 ```
@@ -57,6 +62,7 @@ bash LLaVA-KD/scripts/train/llava_kd_qwen2/train_qwen2_distill_after_sft.sh
 ## Stage 2
 
 In this stage we apply the 3-steps process of LLaVA-KD with the necessary modifications to enforce the cascaded bottom up (BU) distillation strategy.
+To this end, in the second step (FT), we run the TinyLLaVA script `train_qwen2_base_bu.sh`.
 
 ### Pretraining (PT)
 
@@ -65,7 +71,7 @@ In the file `train_distill_bu_qwen2.py`:
 Set the `teacher_dir` variable with the Teacher model path.
 E.g., in case the TinyLLaVA Qwen2.5-3B model is used as Teacher, set:
 
-`teacher_dir = '/path/to/tiny-llava-Qwen2.5-1.5B-siglip-so400m-patch14-384-qwen25-15b_base-finetune'`.
+`teacher_dir = '/path/to/tiny-llava-Qwen2.5-1.5B-siglip-so400m-patch14-384-qwen25-3b_base-finetune'`.
 
 Set the `student_dir` variable with the path of the model derived in the previous stage.
 E.g., in case the TinyLLaVA Qwen2.5-0.5B model is used as Student and the TinyLLaVA Qwen2.5-1.5B model is used as TA, set:
@@ -79,7 +85,7 @@ bash LLaVA-KD/scripts/train/llava_kd_qwen2/train_qwen2_distill_bu.sh
 
 ### Supervised finetuning (FT)
 
-In the script `train_qwen2_base_bu.sh` set the correct version in the variable `VERSION` in order to ensure that the distilled Student model from the previous step is loaded.  
+In the script `train_qwen2_base_bu.sh` of TinyLLaVA set the correct version in the variable `VERSION` in order to ensure that the distilled Student model from the previous step is loaded.  
 E.g., in case the TinyLLaVA Qwen2.5-0.5B, TinyLLaVA Qwen2.5-1.5B, TinyLLaVA Qwen2.5-3B model are used as Student, TA and Teacher you may set: 
 VERSION=qwen25-1_5b_05b_3b_05b_base
 
