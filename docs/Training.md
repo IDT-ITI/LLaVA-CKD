@@ -21,7 +21,8 @@ To reflect the settings of the above Student, TA and Teacher, the version variab
 In the file `train_distill_qwen2.py`:
 
 Set the `teacher_dir` variable with the Teacher Assistant (TA) model path.
-E.g., in case the TinyLLaVA Qwen2.5-1.5B model is used as TA, set:
+
+In our example (i.e., TinyLLaVA Qwen2.5-1.5B model is used as TA), set:
 
 `teacher_dir = '/path/to/tiny-llava-Qwen2.5-1.5B-siglip-so400m-patch14-384-qwen25-1_5b_base-finetune'`.
 
@@ -41,7 +42,8 @@ tiny-llava-Qwen2.5-0.5B-siglip-so400m-patch14-384-qwen25-1_5b_05b_base-distill-p
 In the file `train_sft.py`:
 
 Set the `distill_pretrained_model_path` variable with the path of the model derived in the previous step.
-E.g., in case the TinyLLaVA Qwen2.5-0.5B model is used as Student, set:
+
+That is, for our example, set:
 
 `distill_pretrained_model_path = '/path/to/tiny-llava-Qwen2.5-0.5B-siglip-so400m-patch14-384-qwen25-1_5b_05b_base-distill-pretrain'`
 
@@ -62,7 +64,8 @@ tiny-llava-Qwen2.5-0.5B-siglip-so400m-patch14-384-qwen25-1_5b_05b_base-finetune
 In the file `train_distill_after_qwen2_sft.py`:
 
 Set the `teacher_dir` variable with the path of the TA model.
-E.g., in case the TinyLLaVA Qwen2.5-1.5B model is used as TA, set:
+
+In case the TinyLLaVA Qwen2.5-1.5B model is used as TA, as our example, set:
 
 `teacher_dir = '/path/to/tiny-llava-Qwen2.5-1.5B-siglip-so400m-patch14-384-qwen25-1_5b_base-finetune'`
 
@@ -96,12 +99,14 @@ To reflect the settings of the above Student, TA and Teacher, the version variab
 In the file `train_distill_bu_qwen2.py`:
 
 Set the `teacher_dir` variable with the Teacher model path.
-E.g., in case the TinyLLaVA Qwen2.5-3B model is used as Teacher, set:
+
+For our example, where TinyLLaVA Qwen2.5-3B model is used as Teacher, set:
 
 `teacher_dir = '/path/to/tiny-llava-Qwen2.5-1.5B-siglip-so400m-patch14-384-qwen25-3b_base-finetune'`.
 
 Set the `student_dir` variable with the path of the model derived in the previous stage.
-E.g., in case the TinyLLaVA Qwen2.5-0.5B model is used as Student and the TinyLLaVA Qwen2.5-1.5B model is used as TA, set:
+
+That is, for our example, set:
 
 `student_dir = '/path/to/tiny-llava-Qwen2.5-0.5B-siglip-so400m-patch14-384-qwen25-1_5b_05b_base-distill-finetune'`
 
@@ -139,11 +144,13 @@ tiny-llava-Qwen2.5-0.5B-siglip-so400m-patch14-384-qwen25-1_5b_05b_3b_05b_base-fi
 In the file `train_distill_after_qwen2_sft.py`:
 
 Set the `teacher_dir` variable with the path of the Teacher model.
-E.g., in case the TinyLLaVA Qwen2.5-3B model is used as Teacher, set:
+
+For our example (where TinyLLaVA Qwen2.5-3B model is used as Teacher) set:
 
 `teacher_dir = '/path/to/tiny-llava-Qwen2.5-1.5B-siglip-so400m-patch14-384-qwen25-3b_base-finetune'`
 
 Set the `student_sft_path` variable with the path of the model derived in the previous step.
+
 That is, for our example set:
 
 `distill_pretrained_model_path = '/path/to/tiny-llava-Qwen2.5-0.5B-siglip-so400m-patch14-384-qwen25-1_5b_05b_3b_05b_base-distill-finetune'`
