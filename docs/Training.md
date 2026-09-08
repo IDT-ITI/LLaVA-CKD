@@ -1,7 +1,8 @@
 # Train
 
-In all involved steps below the user has to replace data paths, and where applicable `TEACHER_PATH`, in `scripts/train/train_`***`.sh`, with the ones used in her/his experiment.
-Also ensure that the variable `VERSION` is the same along all steps in the different stages.
+In all involved steps below the user has to replace data paths, and where applicable `TEACHER_PATH`, in `scripts/train/train_`***`.sh`, with the ones used in her/his experiment, where the text replacing `***` in the name of the shell script depends on the stage step (see the scripts corresponding to the different steps below).  
+
+Also ensure that the variable `VERSION` is the same along all steps within the same stage.
 
 To facilitate the user, we assume the following setting for Student, Teacher Assistant (TA) and Teacher:
 - Student: TinyLLaVA Qwen2.5-0.5B (`tiny-llava-Qwen2.5-1.5B-siglip-so400m-patch14-384-qwen25-05b_base-finetune`)
