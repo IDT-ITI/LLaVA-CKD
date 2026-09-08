@@ -1,10 +1,11 @@
-<h2>LLaVA dataset<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
-<ul>
-<li><p><strong>Pretraining Images</strong>: The pretraining images of LLaVA is from the 558K subset of the LAION-CC-SBU dataset. Download as follows.</p>
-<ul class="simple">
-<li><p>LAION-CC-SBU-558K: <a class="reference external" href="https://huggingface.co/datasets/liuhaotian/LLaVA-Pretrain/blob/main/images.zip">images.zip</a>.</p></li>
-</ul>
-</li>
+## LLaVA dataset
+
+##  Pretraining Images
+The pretraining images of LLaVA is from the 558K subset of the LAION-CC-SBU dataset. Download as follows.
+
+LAION-CC-SBU-558K [images.zip](https://huggingface.co/datasets/liuhaotian/LLaVA-Pretrain/blob/main/images.zip)
+
+
 <li><p><strong>Pretraining Annotations</strong>: The pretraining annotations of LLaVA. Download as follows.</p>
 <ul class="simple">
 <li><p>pretraining annotations: <a class="reference external" href="https://huggingface.co/datasets/liuhaotian/LLaVA-Pretrain">blip_laion_cc_sbu_558k.json</a>.</p></li>
