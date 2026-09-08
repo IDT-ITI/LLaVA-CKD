@@ -9,15 +9,16 @@
 ## Stage 1
 
 ```
-bash scripts/train/llava_kd_qwen2/train_qwen2_distill_bu.sh
-bash LLaVA-KD/scripts/train/llava_kd_qwen2/train_qwen2_distill_bu.sh
-bash TinyLLaVA/scripts/train/qwen2/train_qwen2_base_bu.sh
+bash LLaVA-KD/scripts/train/llava_kd_qwen2/train_qwen2_distill.sh
+bash LLaVA-KD/scripts/train/llava_kd_qwen2/train_qwen2_sft.sh
+bash LLaVA-KD/scripts/train/llava_kd_qwen2/train_qwen2_distill_after_sft.sh
 ```
 
 ## Stage 2
 
 ```
-bash scripts/train/llava_kd_qwen2/train_qwen2_distill_bu.sh
 bash LLaVA-KD/scripts/train/llava_kd_qwen2/train_qwen2_distill_bu.sh
 bash TinyLLaVA/scripts/train/qwen2/train_qwen2_base_bu.sh
+bash LLaVA-KD/scripts/train/llava_kd_qwen2/train_qwen2_distill_after_sft.sh
+
 ```
