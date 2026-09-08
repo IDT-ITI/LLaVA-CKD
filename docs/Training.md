@@ -1,6 +1,6 @@
 # Train
 
-In all involved steps below the user has to replace data paths, and where applicable `TEACHER_PATH`, in the corresponding train script `train_qwen2`***`.sh`, with the ones used in her/his experiment for training.
+In all involved steps below the user has to replace data paths, and where applicable `TEACHER_PATH`, in the corresponding train script `train_qwen2``***``.sh`, with the ones used in her/his experiment for training.
 Above, the text replacing `***` in the name of the shell script depends on the stage step (see the scripts corresponding to the different steps below).  
 
 Also ensure that the variable `VERSION` is the same along all steps within the same stage.
