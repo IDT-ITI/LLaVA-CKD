@@ -91,7 +91,7 @@ To reflect the settings of the above Student, TA and Teacher, the version variab
 
 `VERSION=qwen25-1_5b_05b_3b_05b_base`
 
-### Pretraining (PT)
+### PT
 
 In the file `train_distill_bu_qwen2.py`:
 
@@ -116,7 +116,7 @@ For our example, this will produce the following finetuned Student model:
 tiny-llava-Qwen2.5-0.5B-siglip-so400m-patch14-384-qwen25-1_5b_05b_3b_05b_base-distill-pretrain
 ```
 
-### Supervised finetuning (FT)
+### FT
 
 In the script `train_qwen2_base_bu.sh` of TinyLLaVA set the correct version in the variable `VERSION` in order to ensure that the distilled Student model from the previous step is loaded.  
 
@@ -134,7 +134,7 @@ For our example, this will produce the following finetuned Student model:
 tiny-llava-Qwen2.5-0.5B-siglip-so400m-patch14-384-qwen25-1_5b_05b_3b_05b_base-finetune
 ```
 
-### Distillation SFT (DFT)
+### DFT
 
 In the file `train_distill_after_qwen2_sft.py`:
 
