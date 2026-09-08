@@ -18,6 +18,8 @@ To reflect the settings of the above Student, TA and Teacher, the version variab
 
 `VERSION=qwen25-1_5b_05b_base`
 
+All scripts in this stage should run from the LLaVA-KD directory (i.e., from the home directory run first `cd LLaVA-KD/`) 
+
 ### Pretraining (PT)
 
 In the file `train_distill_qwen2.py`:
@@ -95,6 +97,8 @@ To this end, in the second step (FT), we run the TinyLLaVA script `train_qwen2_b
 To reflect the settings of the above Student, TA and Teacher, the version variable (determining the name of the overall experiment in stage 2) along all shell scripts in this stage is set as following:
 
 `VERSION=qwen25-1_5b_05b_3b_05b_base`
+
+Similarly to stage 1, all scripts in this stage should run from the LLaVA-KD directory (i.e., from the home directory run first `cd LLaVA-KD/`), except from the FT step, which should run from the TinyLLaVA directory (i.e., from the home directory run first `cd TinyLLaVA/`)
 
 ### PT
 
