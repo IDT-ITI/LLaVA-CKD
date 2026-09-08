@@ -36,7 +36,8 @@ Large Vision-Language Models (VLMs) are successful in addressing a multitude of 
 
 1. [Environment Installation](docs/Install.md)
 2. [Training Data](docs/training_data.md)
-3. [Evaluation](docs/Evaluation.md)
+3. [Training](docs/Training.md)
+4. [Evaluation](docs/Evaluation.md)
 
 ## Citation 📝
 
