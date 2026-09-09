@@ -10,7 +10,7 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-## 2. Install PyTorch and flash-attn version according to python, torch and cuda version
+## 2. Install PyTorch and flash-attn version according to the installed python, torch and cuda version
 
 ```shell
 pip3 install torch torchvision
