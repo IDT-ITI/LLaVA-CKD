@@ -116,7 +116,7 @@ def train():
 
 
     # load pretrained checkpoint
-    student_sft_path = os.path.join('/data/LMMKD/checkpoints/qwen25_distill_llava_factory/tiny-llava-Qwen3-0.6B-siglip-so400m-patch14-384-qwen3-1_5b_06b_base-finetune', 'model.safetensors')
+    student_sft_path = os.path.join('/data/LMMKD/checkpoints/qwen25_distill_llava_factory/tiny-llava-Qwen2.5-0.5B-siglip-so400m-patch14-384-qwen25-1_5b_05b_base-finetune', 'model.safetensors')
     with safetensors.safe_open(student_sft_path, framework="pt") as f:
         student_sft_weight = {k: f.get_tensor(k).detach().clone() for k in f.keys()} # nikgkal
         # student_sft_weight = {k: torch.tensor(f.get_tensor(k)) for k in f.keys()}
