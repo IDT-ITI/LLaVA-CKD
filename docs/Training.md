@@ -5,7 +5,7 @@ In all steps below, the user has to replace the data paths and (where applicable
 Also ensure that the variable `VERSION` is the same along all steps within the same stage.
 
 To facilitate the user, as an indicative example, we assume the following setting for Student, Teacher Assistant (TA) and Teacher:
-- Student: TinyLLaVA Qwen2.5-0.5B (will be automatically retrieved from Hugging Face)
+- Student: TinyLLaVA Qwen2.5-0.5B (the LLM backbone and Vision Tower will be automatically retrieved from Hugging Face)
 - TA: TinyLLaVA Qwen2.5-1.5B (`tiny-llava-Qwen2.5-1.5B-siglip-so400m-patch14-384-qwen25-1_5b_base-finetune`)
 - Teacher: TinyLLaVA Qwen2.5-3B (`tiny-llava-Qwen2.5-1.5B-siglip-so400m-patch14-384-qwen25-3b_base-finetune`)
 
