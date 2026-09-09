@@ -1,11 +1,11 @@
 # LLaVA dataset
-The LLaVA dataset dataset is used for training the different models. The details for data preparation are provided in the following link of TinyLLaVA: 
+The LLaVA dataset is used for training the different models. The details for data preparation are provided in the following link of TinyLLaVA: 
 [Training Data Preparation](https://tinyllava-factory.readthedocs.io/en/latest/Prepare%20Datasets.html).
 
 For housekeeping purposes we provide these details also locally in the following sections.
 
 ## Pretraining images
-The pretraining images of LLaVA is from the 558K subset of the LAION-CC-SBU dataset. Download as follows.
+For pretraining, the 558K subset of the LAION-CC-SBU dataset is used. Download as follows.
 
 LAION-CC-SBU-558K [images.zip](https://huggingface.co/datasets/liuhaotian/LLaVA-Pretrain/blob/main/images.zip)
 
