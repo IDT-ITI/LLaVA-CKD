@@ -13,7 +13,7 @@ To facilitate the user, as an indicative example, we assume the following settin
 
 In this stage we apply the 3-steps process of LLaVA-KD.
 
-To reflect the settings of the above Student, TA and Teacher, the version variable (determining the name of the overall experiment in stage 1) along all shell scripts in this stage is set as following:
+To reflect the settings of the above Student, TA and Teacher, the VERSION variable (determining the name of the overall experiment in stage 1) along all shell scripts in this stage is set as following:
 
 `VERSION=qwen25-1_5b_05b_base`
 
