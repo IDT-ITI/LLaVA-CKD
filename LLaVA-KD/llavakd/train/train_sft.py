@@ -55,7 +55,7 @@ def get_conncet_w(weights, keyword):
 def train():# 
 
     # nikgkal: if parse arguments then pre_language model state_dict() cannot be returned!!!!
-    distill_pretrained_model_path = '/data/LMMKD/checkpoints/qwen25_distill_llava_factory/tiny-llava-Qwen3-0.6B-siglip-so400m-patch14-384-qwen3-1_5b_06b_base-distill-pretrain'
+    distill_pretrained_model_path = '/data/LMMKD/checkpoints/qwen25_distill_llava_factory/tiny-llava-Qwen2.5-0.5B-siglip-so400m-patch14-384-qwen25-1_5b_05b_base-distill-pretrain'
     if os.path.exists(os.path.join(distill_pretrained_model_path, 'vision_tower')):
         pre_vision_tower_path = os.path.join(distill_pretrained_model_path, 'vision_tower/pytorch_model.bin')
         pre_vision = torch.load(pre_vision_tower_path, map_location='cpu')
