@@ -1,5 +1,7 @@
 # Setup LLaVA-CKD
 
+After downloading github repository of LLaVA-CKD, follow the steps below.
+
 ## 1. Move to LLaVA-CKD home directory and create python virtual environment
 
 ```shell
