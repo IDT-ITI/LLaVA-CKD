@@ -9,7 +9,7 @@ To facilitate the user, as an indicative example, we assume the following settin
 - TA: TinyLLaVA Qwen2.5-1.5B (`tiny-llava-Qwen2.5-1.5B-siglip-so400m-patch14-384-qwen25-1_5b_base-finetune`)
 - Teacher: TinyLLaVA Qwen2.5-3B (`tiny-llava-Qwen2.5-1.5B-siglip-so400m-patch14-384-qwen25-3b_base-finetune`)
 
-## Stage 1
+## Stage 1: Distillation from TA to Student
 
 In this stage we apply the 3-steps process of LLaVA-KD.
 
@@ -88,7 +88,7 @@ For our example, this will produce the following finetuned Student model:
 tiny-llava-Qwen2.5-0.5B-siglip-so400m-patch14-384-qwen25-1_5b_05b_base-distill-finetune
 ```
 
-## Stage 2
+## Stage 2: Distillation from Teacher to (already distilled in Stage 1) Student
 
 In this stage we apply the 3-steps process of LLaVA-KD with the necessary modifications to enforce the cascaded bottom up (BU) distillation strategy.
 To this end, in the second step (FT), we run the TinyLLaVA script `train_qwen2_base_bu.sh`.
