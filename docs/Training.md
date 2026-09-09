@@ -16,6 +16,7 @@ In this stage we apply the 3-steps process of LLaVA-KD.
 To reflect the settings of the above Student, TA and Teacher, the `LLM_VERSION`variable and the VERSION variable (determining the name of the overall experiment in stage 1) along all shell scripts in this stage are set as following:
 
 `VERSION=qwen25-1_5b_05b_base`
+
 `LLM_VERSION=Qwen/Qwen2.5-0.5B`
 
 All scripts in this stage should run from the LLaVA-KD directory (i.e., from the home directory run first `cd LLaVA-KD/`) 
