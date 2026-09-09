@@ -3,12 +3,12 @@ FINETUNE_DATA_PATH=/home/gkalelis/Documents/py/datasets/LlavaPtSft/text_files/ll
 IMAGE_PATH=/home/gkalelis/Documents/py/datasets/LlavaPtSft/llava/llava_pretrain/images #pretrain image dir
 FINETUNE_IMAGE_PATH=/home/gkalelis/Documents/py/datasets/LlavaPtSft #finetune image dir
 
-LLM_VERSION=Qwen/Qwen3-0.6B # llm path in huggingface
+LLM_VERSION=Qwen/Qwen2.5-0.5B # llm path in huggingface
 VT_VERSION=google/siglip-so400m-patch14-384 #vision tower path in huggingface
 VT_VERSION2="" #if you are not using mof vision tower, keep it empty
 CN_VERSION=mlp2x_gelu #connector type, other options are: qformer, resampler, etc
 CONV_VERSION=qwen2_base #chat template, other options are: phi, llama, gemmma, etc
-VERSION=qwen3-1_5b_06b_base #experiment name for recording different runnings
+VERSION=qwen25-15b_05b_base #experiment name for recording different runnings
 TRAIN_RECIPE=common #training recipes, other options are: lora, qlora
 MODEL_MAX_LENGTH=2048 #max model length for llm
 
