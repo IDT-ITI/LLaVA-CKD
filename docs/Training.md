@@ -126,7 +126,7 @@ tiny-llava-Qwen2.5-0.5B-siglip-so400m-patch14-384-qwen25-1_5b_05b_3b_05b_base-di
 - In the script `train_qwen2_base_bu.sh` of TinyLLaVA set the correct version in the variable `VERSION` in order to ensure that the distilled Student model from the previous step is loaded.
   That is, for our example you may set: 
 ```
-VERSION=qwen25-1_5b_05b_3b_05b_base`
+VERSION=qwen25-1_5b_05b_3b_05b_base
 ```
 
 - Run the following script:
