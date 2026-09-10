@@ -25,8 +25,7 @@ We will release the code and checkpoints as soon as the paper is accepted. Stay 
 
 ## News 📢
 
-- **`2026/09/08`** TinyLLaVA checkpoints publicly released in [Hugging Face](https://huggingface.co/CERTH-ITI-IDT/models).  
-  All LLaVA-CKD checkpoints privately uploaded (including LLaVA-KD ones) in [Hugging Face](https://huggingface.co/collections/CERTH-ITI-IDT/ckd-llava). 🔥
+- **`2026/09/08`** TinyLLaVA checkpoints publicly released in [Hugging Face](https://huggingface.co/CERTH-ITI-IDT/models). All LLaVA-CKD checkpoints privately uploaded (including LLaVA-KD ones) in [Hugging Face](https://huggingface.co/collections/CERTH-ITI-IDT/ckd-llava). 🔥
 - **`2026/05/11`** LLaVA-CKD [paper](https://arxiv.org/abs/2605.10641) is available on arXiv. 🌟
 
 ## Overview 🔥
