@@ -116,7 +116,7 @@ student_dir = '/path/to/tiny-llava-Qwen2.5-0.5B-siglip-so400m-patch14-384-qwen25
 bash scripts/train/llava_kd_qwen2/train_qwen2_distill_bu.sh
 ```
 
-- For our example, this will produce the following finetuned Student model:
+- For our example, this will produce the following pretrained Student model:
 ```
 tiny-llava-Qwen2.5-0.5B-siglip-so400m-patch14-384-qwen25-1_5b_05b_3b_05b_base-distill-pretrain
 ```
