@@ -2,7 +2,7 @@
 
 <h3 align="center">
   <a href="https://arxiv.org/abs/2605.10641">arXiv</a> |
-  <a href="https://huggingface.co/collections/CERTH-ITI-IDT/ckd-llava">Hugging Face</a>
+  <a href="https://huggingface.co/collections/CERTH-ITI-IDT/llava-ckd">Hugging Face</a>
 </h3>
 
 ![](docs/llava-ckd-concept_v3.png)
