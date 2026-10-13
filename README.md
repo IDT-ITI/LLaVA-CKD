@@ -15,22 +15,15 @@
 - [Getting Started](#getting-started-)
 - [Citation](#citation-)
 
-## TODO List 📅
-
-We will release the code and checkpoints as soon as the paper is accepted. Stay tuned! 🔥
-
-- [x] Release environment setup
-- [ ] Release checkpoints
-- [ ] Release code
-
 ## News 📢
 
-- **`2026/09/08`** TinyLLaVA checkpoints publicly released in [Hugging Face](https://huggingface.co/CERTH-ITI-IDT/models). All LLaVA-CKD checkpoints privately uploaded (including LLaVA-KD ones) in [Hugging Face](https://huggingface.co/collections/CERTH-ITI-IDT/ckd-llava). 🔥
-- **`2026/05/11`** LLaVA-CKD [paper](https://arxiv.org/abs/2605.10641) is available on arXiv. 🌟
+- **`2026/10/13`** All LLaVA-CKD checkpoints (including LLaVA-KD ones) publicly released in [Hugging Face](https://huggingface.co/collections/CERTH-ITI-IDT/ckd-llava). 🔥
+- **`2026/09/08`** TinyLLaVA checkpoints publicly released in [Hugging Face](https://huggingface.co/CERTH-ITI-IDT/models). 🔥
+- **`2026/05/11`** LLaVA-CKD [initial pre-print](https://arxiv.org/abs/2605.10641) is available on arXiv. 🌟
 
 ## Overview 🔥
 
-Large Vision-Language Models (VLMs) are successful in addressing a multitude of vision=-language understanding tasks, such as Visual Question Answering (VQA), but their memory and compute requirements remain a concern for practical deployment. A promising class of techniques for mitigating this concern is Knowledge Distillation, where knowledge from a high-capacity Teacher network is transferred to a considerably smaller Student network. However, the capacity gap between the two networks is both a blessing and a curse: the smaller the Student network, the better its efficiency, and the stronger (typically, also larger) the Teacher, the more knowledge it carries; yet, beyond a point, the larger capacity gap between the two leads to worse knowledge transfer. To counter this effect, we propose a bottom-up cascaded knowledge distillation (CKD) framework. Instead of treating knowledge transfer as an activity involving one high-capacity Teacher (or an ensemble of such), inspired by human formal education systems, we introduce one (potentially, more) additional Teacher(s) of intermediate capacity that gradually bring the Student network to the next level, where the next (higher-capacity) Teacher can take over. We provide a theoretical analysis to motivate why progressive reduction of the Teacher-Student gap may improve distillation. We apply the proposed framework on models built upon the LLaVA methodology and evaluate the derived models on seven standard, publicly available VQA benchmarks, demonstrating competitive performance with recent compact VLMs.
+Large Vision-Language Models (VLMs) are successful in addressing a multitude of vision-language understanding tasks, such as Visual Question Answering (VQA), but their memory and compute requirements remain a concern for practical deployment. A promising class of techniques for mitigating this concern is Knowledge Distillation, where knowledge from a high-capacity Teacher network is transferred to a considerably smaller Student network. However, the capacity gap between the two networks is both a blessing and a curse: the smaller the Student network, the better its efficiency, and the stronger (typically, also larger) the Teacher, the more knowledge it carries; yet, beyond a point, the larger capacity gap between the two leads to worse knowledge transfer. To counter this effect, we propose a bottom-up cascaded knowledge distillation (CKD) framework. Instead of treating knowledge transfer as an activity involving one high-capacity Teacher (or an ensemble of such), inspired by human formal education systems, we introduce one (potentially, more) additional Teacher(s) of intermediate capacity that gradually bring the Student network to the next level, where the next (higher-capacity) Teacher can take over. We provide a theoretical analysis to motivate why progressive reduction of the Teacher-Student gap may improve distillation. We apply the proposed framework on models built upon the LLaVA methodology and evaluate the derived models on seven standard, publicly available VQA benchmarks, demonstrating competitive performance with recent compact VLMs.
 
 ## Getting Started 🛠️ 
 
@@ -41,18 +34,17 @@ Large Vision-Language Models (VLMs) are successful in addressing a multitude of 
 
 ## Citation 📝
 
-If you find our project useful for your research please consider citing our paper:
+This github repository provides scripts and trained models from our paper: 
+N. Gkalelis, V. Mezaris, "LLaVA-CKD: Bottom-Up Cascaded Knowledge Distillation for Vision-Language Models", IEEE ACCESS, 2026. Pre-print on arXiv: [https://arxiv.org/abs/2605.10641](https://arxiv.org/abs/2605.10641).
+
+If you find this work interesting or useful for your research, use the following Bibtex entry to cite us:
 
 ```bibtex
-@misc{gkalelisMezarisArxiv2026,
-      title={LLaVA-CKD: Bottom-Up Cascaded Knowledge Distillation for Vision-Language Models}, 
-      author={Nikolaos Gkalelis and Vasileios Mezaris},
-      year={2026},
-      eprint={2605.10641},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2605.10641}, 
-}
+@ARTICLE{gkalelisAccess2026,
+  author={Nikolaos Gkalelis and Vasileios Mezaris},
+  journal={IEEE ACCESS}, 
+  title={LLaVA-CKD: Bottom-Up Cascaded Knowledge Distillation for Vision-Language Models}, 
+  year={2026}}
 ```
 
 ## LLaVA-CKD builds on: 🤝
