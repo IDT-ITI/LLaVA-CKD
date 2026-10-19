@@ -17,6 +17,7 @@
 
 ## News 📢
 
+- **`2026/10/19`** LLaVA-CKD published in IEEE ACCESS, available on ieeexplore, [DOI:10.1109/ACCESS.2026.3744200](https://doi.org/10.1109/ACCESS.2026.3744200).
 - **`2026/10/13`** All LLaVA-CKD checkpoints (including LLaVA-KD ones) publicly released in [Hugging Face](https://huggingface.co/collections/CERTH-ITI-IDT/llava-ckd). 🔥
 - **`2026/09/08`** TinyLLaVA checkpoints publicly released in [Hugging Face](https://huggingface.co/CERTH-ITI-IDT/models). 🔥
 - **`2026/05/11`** LLaVA-CKD [initial pre-print](https://arxiv.org/abs/2605.10641) is available on arXiv. 🌟
@@ -35,7 +36,7 @@ Large Vision-Language Models (VLMs) are successful in addressing a multitude of 
 ## Citation 📝
 
 This github repository provides the scripts, and links to the trained models, from our paper: 
-N. Gkalelis, V. Mezaris, "LLaVA-CKD: Bottom-Up Cascaded Knowledge Distillation for Vision-Language Models", IEEE ACCESS, 2026. [https://doi.org/10.1109/ACCESS.2026.3744200](DOI:10.1109/ACCESS.2026.3744200). Pre-print on arXiv: [https://arxiv.org/abs/2605.10641](https://arxiv.org/abs/2605.10641).
+N. Gkalelis, V. Mezaris, "LLaVA-CKD: Bottom-Up Cascaded Knowledge Distillation for Vision-Language Models", IEEE ACCESS, 2026. [DOI:10.1109/ACCESS.2026.3744200](https://doi.org/10.1109/ACCESS.2026.3744200). Pre-print on arXiv: [https://arxiv.org/abs/2605.10641](https://arxiv.org/abs/2605.10641).
 
 If you find this work interesting or useful for your research, use the following Bibtex entry to cite us:
 
