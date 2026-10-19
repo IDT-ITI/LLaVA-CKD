@@ -14,7 +14,6 @@
 - [Getting Started](#getting-started-)
 - [Citation](#citation-)
 - [Acknowledgement](#acknowledgement-)
-- [License](#license-)
 
 ## News 📢
 
@@ -36,7 +35,7 @@ Large Vision-Language Models (VLMs) are successful in addressing a multitude of 
 ## Citation 📝
 
 This github repository provides the scripts, and links to the trained models, from our paper: 
-N. Gkalelis, V. Mezaris, "LLaVA-CKD: Bottom-Up Cascaded Knowledge Distillation for Vision-Language Models", IEEE ACCESS, 2026. Pre-print on arXiv: [https://arxiv.org/abs/2605.10641](https://arxiv.org/abs/2605.10641).
+N. Gkalelis, V. Mezaris, "LLaVA-CKD: Bottom-Up Cascaded Knowledge Distillation for Vision-Language Models", IEEE ACCESS, 2026. [https://doi.org/10.1109/ACCESS.2026.3744200](DOI:10.1109/ACCESS.2026.3744200). Pre-print on arXiv: [https://arxiv.org/abs/2605.10641](https://arxiv.org/abs/2605.10641).
 
 If you find this work interesting or useful for your research, use the following Bibtex entry to cite us:
 
