@@ -13,7 +13,6 @@
 - [Overview](#overview-)
 - [Getting Started](#getting-started-)
 - [Citation](#citation-)
-- [Dependecies](#LLaVA-CKD builds on-)
 - [Acknowledgement](#acknowledgement-)
 - [License](#license-)
 
