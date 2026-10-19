@@ -9,11 +9,13 @@
 
 ## Contents ✨
 
-- [Todo List](#todo-list-)
 - [News](#news-)
 - [Overview](#overview-)
 - [Getting Started](#getting-started-)
 - [Citation](#citation-)
+- [Dependecies](#LLaVA-CKD builds on-)
+- [Acknowledgement](#acknowledgement-)
+- [License](#license-)
 
 ## News 📢
 
